@@ -1,4 +1,4 @@
-## This is a copy of the project I submitted for the CS50 Python introduction course at Stamford.
+## This is a copy of the project I submitted for the CS50 Python introduction course at Harvard.
 
 # Value At Risk Plotter
 ### Video Demo: https://youtu.be/RBK1IpUsIjc
