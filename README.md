@@ -17,3 +17,9 @@ The general purpose of this project is to enable me to develop my python skills 
 * Stress testing
   * Identify potential scenarios
   * Use textbook to get better idea of how stress testing is done
+* Pull/Push data from files
+  * Export excel file
+  * Pull data from excel file
+  * Format data nicely
+  * Create charts from data
+  * Data visualision in general 
