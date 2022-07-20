@@ -1,3 +1,0 @@
-I had a problem with the metadata when I committed originally. I'm seeing if I can fix it.
-
-Hopefully it'll have the correct email now in the metadata.
