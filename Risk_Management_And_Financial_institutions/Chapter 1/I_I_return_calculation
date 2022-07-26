@@ -1,0 +1,28 @@
+import math
+
+#1.1 An investment has probabilities 0.1, 0.2, 0.35, 0.25, and 0.1 of giving returns equal to 40%, 30%, 15%, −5%, and
+#−15%. What are the expected returns and the standard deviations of returns?
+
+probabilities = [0.1, 0.2, 0.35, 0.25, 0.1]
+returns = [40, 30, 15, -5, -15]
+
+#convert from percentages to decimal
+returns = [i/100 for i in returns]
+
+#First we calculate expected returns, then we calculated the squared deviations.
+expectedreturns=sum([i*j for i, j in zip(probabilities, returns)])
+squareddeviations=[abs(i-expectedreturns)**2 for i in returns]
+sd=math.sqrt(sum([i*j for i, j in zip(probabilities, squareddeviations)]))
+
+#Attempting to do the above in two lines.
+#sd=math.sqrt(sum([i*abs(j-expectedreturns)**2 for i, j in zip(probabilities, returns)]))
+
+#Attempting in one line (This is very bad code).
+#sd=math.sqrt(sum([i*abs(j-sum([i*j for i, j in zip(probabilities, returns)]))**2 for i, j in zip(probabilities,
+# returns)]))
+
+
+#To output the float with 3 significant figures, use .3f to format the number.
+print(f"{expectedreturns:.3f} {sd:.4f}")
+
+#From this it seems the use of zip and arrays of probabilities and returns is useful.
